@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+	<ul>
+	  <li><a class="active" href="index.html">Inicio</a></li>
+	  <li><a href="descripcion.html">Descripción</a></li>
+	  <li><a href="propiedades.html">Propiedades</a></li>
+	  <li><a href="utilidad.html">Utilidad</a></li>
+	</ul>
+
+	<br>
+	<center><h1>Utilidad</h1></center>
+	
+
+	<center>
+	<div><p>
+			Muchas veces en las escuelas, los estudiantes al no ver de form gráfica como funcionan los átomos, les hace más dificil comprender porqué se unen, a la vez que les es difícil saber cuando pueden determinados elementos unirse o no.
+		</p>
+			<center>
+				<div class="slideshow" style="max-width:500px">
+				  <img class="mySlides" src="atomo3.gif" style="width:100%">
+				  <img class="mySlides" src="atomo2.gif" style="width:100%">
+				  <img class="mySlides" src="atomo4.gif" style="width:100%">
+				</div>
+			</center>
+		<p>
+			Este software les permite interactuar directamente con ellos de forma que puedan no solo aprender como se hacen las uniones, sino de que el proceso sea entretenido y facilite la comprensión de cómo funcionan los compuestos en el universo, sus características y mecánicas.
+		</p>
+	</div>
+	</center>
+
+
+<div id="mySidenav" class="sidenav">
+  <a onclick="Mostrar()">Tecnologías</a>
+  		<div id="mos" style="display: none;">
+	  		<a style="font-size: small;">Unity Engine</a>
+	  		<a style="font-size: small;">Microsoft Kinect</a>
+	  		<a style="font-size: small;">Visual Studio</a>
+	  		<a style="font-size: small;">Mono development</a>
+	  	</div>
+  <a onclick="Mostrar2()">Integrantes</a>
+	  <div id="mos2" style="display: none;">
+	  		<a style="font-size: small;">Ariel Luparia</a>
+	  		<a style="font-size: small;">Patricio Lorqui</a>
+	  		<a style="font-size: small;">Mathias Lagormarsino</a>
+	  		<a style="font-size: small;">Franco Melillo</a>
+	  	</div>
+  <a onclick="Mostrar3()">Institución</a>
+  		<div id="mos3" style="display: none;">
+  			<a style="font-size: small;">San Juan XXIII</a>
+  			<a style="font-size: small;">Curso: 6c</a>
+  		</div>
+  <a onclick="Mostrar4()">Profesores</a>
+  	<div id="mos4" style="display: none;">
+  			<a style="font-size: small;">Leila Coronel</a>
+  			<a style="font-size: small;">Germán Bobr</a>
+  			<a style="font-size: small;">José Campos</a>
+  		</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<script>
+	function Mostrar()
+	{
+		var x = document.getElementById("mos");
+    	if (x.style.display === "none") 
+	    {
+	        x.style.display = "block";
+	    } 
+	    else 
+	    {
+	        x.style.display = "none";
+	    }
+	}
+
+	function Mostrar2()
+	{
+		var x = document.getElementById("mos2");
+    	if (x.style.display === "none") 
+		{
+		        x.style.display = "block";
+		} 
+		else 
+		{
+		        x.style.display = "none";
+		}
+	}
+
+	function Mostrar3()
+	{
+		var x = document.getElementById("mos3");
+	    if (x.style.display === "none") 
+		{
+		    x.style.display = "block";
+		} 
+		else 
+		{
+		    x.style.display = "none";
+		}
+	}
+
+	function Mostrar4()
+	{
+		var x = document.getElementById("mos4");
+	    if (x.style.display === "none") 
+	    {
+	        x.style.display = "block";
+	    } 
+	    else 
+	    {
+	        x.style.display = "none";
+	    }
+	}
+
+</script>
+
+</body>
+</html>

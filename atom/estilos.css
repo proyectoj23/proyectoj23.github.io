@@ -1,0 +1,114 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+
+    font-family: sans-serif;
+
+}
+
+li {
+    float: left;
+    color: #818181;
+}
+
+li:hover{
+	color: #f1f1f1;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    color: #818181;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover() {
+    color: #f1f1f1;
+    background-color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+    width: 167.5px;
+}
+
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+body  {
+    background-color:lightgray;
+
+}
+
+p { text-align: justify;
+    text-indent: 50px;
+
+}
+
+div{
+	width: 650px;
+	margin-bottom: : 1200px;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px; 
+    margin-top: 48px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+*{font-family: 'Merriweather', serif;}
+
+img{border-style: double;}
+
+button:hover() {
+    color: #f1f1f1;
+    background-color: white;
+}
