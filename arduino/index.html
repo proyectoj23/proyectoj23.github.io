@@ -1,0 +1,239 @@
+<html>
+<title>Proyecto Feria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image:
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+table, td, th {
+    border: 3px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 120%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-red">Pagina Principal</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#De que se trata" class="w3-button w3-block w3-black">De que se trata</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#elementos usados" class="w3-button w3-block w3-red">Elementos Usados</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Quienes somos" class="w3-button w3-block w3-black">Quienes Somos</a>
+    </div>
+  </div>
+</div>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-container w3-text-white">
+      <img src="asd2.jpg" alt="Lights" style="width:80%">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-red" style="font-size:90px">Smart<br>Temperature</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+
+<div class="w3-sand w3-grayscale w3-large">
+
+
+<div class="w3-container" id="De que se trata">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">De Que se trata</span></h5>
+    <p>Presentación proyecto llevado a cabo con IoT (Internet of Things) Lo que haremos será un sistema casero de mediciones de temperatura, humedad y presión barométrica, que envía y muestra la información utilizando el servicio de Thingspeak.com Lo primero que tuvimos que hacer es crearnos una cuenta en Thingspeak.com, una vez creada la cuenta, nos creamos un canal (Channel).</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Los sensores de temperatura se utilizan para eso, para medir la temperatura del entorno. Aunque todos ellos funcionan de una manera similar, hay pequeños detalles que los hacen diferentes. Precisamente esa va a ser la base para poder elegir uno u otro, esas pequeñas diferencias nos harán escoger el mejor sensor de temperatura para nuestros proyectos con Arduino o cualquier otro microcontrolador.</p>
+      <p>Las aplicaciones de este tipo de sensores son muchas, desde una simple estación meteorológica hasta un sistema de alarma capaz de detectar la presencia de un ser vivo. Voy a clasificar los diferentes sensores en tres tipos dependiendo de a quien va dirigido.
+
+Sensores para aficionados,
+Sensores para automatizaciones,
+Sensores con características especiales,</p>
+    </div>
+    <img src="descarga.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Este va a ser el arduino uno que usaremos para el proyecto</strong></p>
+  </div>
+</div>
+<div class="w3-container" id="elementos usados">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Elementos que vamos a usar para realizar el proyecto</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Elementos');" id="myLink">
+        <div class="w3- s6 tablink">Elementos</div>
+      </a>
+
+    </div>
+</div>
+<center>
+</center
+
+
+    <div id="Elementos" class="w3-container menu w3-padding-48 w3-card">
+      <h5>*Arduino Uno</h5>
+      <br>
+      <h5>*Ethernet Shield R2</h5>
+      <br>
+      <h5>*Sensor BMP180 (temperatura y presión barométrica) </h5>
+      <br>
+      <h5>*Sensor DHT11 (temperatura y humedad)</h5>
+      <br>
+      <h5>*Cuenta en Thingspeak</h5>
+      <br>
+      <h5>*Sensor BMP180 (temperatura y presión barométrica) </h5>
+      <br>
+      <h5>*Arduino Ide 1.5.x en adelante (es necesaria esta versión ya que tiene un mejor manejo de Strings que la versión 1.0.6) </h5>
+    </div>
+    <br>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Tenemos dos sensores que miden los mismos valores, es porque el sensor BMP180 tiene una mejor resolución de medición de temperatura (mide con 2 decimales) cosa que el DHT11 no hace. Pero el DHT11 es un sensor muy económico y la medición de Humedad es una buena información para mostrar.</p>
+    </div>
+    <center>
+    <style>
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+    </head>
+    <body>
+
+    <button class="button" style="vertical-align:middle"><a href="quees.html#">Que es cada cosa</a><span> </span></button>
+  </center>
+
+
+  </div>
+</div>
+<marquee scrollamount="15" direction="LEFT" behavior="alternate" scrolldelay="5">  <br />
+   <img height="259" border="7" width="199" alt="" src="arduino.jpg" _fcksavedurl="Aquí la 1ª IMAGEN" _fcksavedurl="trapa.jpg" />
+   <img height="259" border="7" width="199" alt="" src="Ethernet.jpg" _fcksavedurl="Aquí la 2ª IMAGEN.jpg" _fcksavedurl="Aquí la 2ª IMAGEN.jpg" />
+   <img height="259" border="7" width="199" alt="" src="bmp180.jpg" _fcksavedurl="Aquí la 3ª IMAGEN.jpg" _fcksavedurl="Aquí la 3ª IMAGEN.jpg" />
+   <img height="259" border="7" width="199" alt="" src="Sensor.jpg" _fcksavedurl="Aquí la 4ª IMAGEN" _fcksavedurl="trapa.jpg" />
+ </marquee> </br>
+
+<div class="w3-container" id="Quienes somos" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Quienes Somos</span></h5>
+    <p>Nosotros somos alumnos del colegio San Juan XXIII. Cursamos 6to Año en la modalidad Informatica. Realizamos este proyecto con ayuda de los profesores: Bobr German - Leila Coronel - Jose Campos</p>
+    <table class="egt">
+
+
+    <tr>
+
+      <th scope="row">Nombre del Alumno</th>
+
+      <th>Cabrera Ivan</th>
+
+      <th>Grilli Agustin</th>
+
+      <th>Pfeiffer Juan Pablo</th>
+
+    </tr>
+
+    <tr>
+
+      <th>Numero de celular</th>
+
+      <td>11 49 72 86 68</td>
+
+      <td>11 30 26 18 09</td>
+
+      <td>11 59 28 27 67</td>
+
+    </tr>
+
+    <tr>
+
+      <th>Correo Electronico</th>
+
+      <td>inc.cai18@gmail.com</td>
+
+      <td>agustinleonelgrilli@icloud.com></td>
+
+      <td>juanpablopfeiffer@gmail.com</td>
+
+    </tr>
+
+    <tr>
+
+      <th>Numero de hogar</th>
+
+      <td>--------</td>
+
+      <td>--------</td>
+
+      <td>--------</td>
+
+    </tr>
+
+  </table>
+    </form>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
